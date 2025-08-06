@@ -1,0 +1,91 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    background-color: #cca89d;
+    max-height: 9em;
+    padding: 1em;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #cca89d;
+    border-top: thin solid #705348;
+    border-bottom: thin solid #705348;
+    height: 2em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    flex-grow: 1;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding: 0.5em 1em;
+}
+
+/* H2 */
+h2 {
+    color: #000000;
+    padding: 1em;
+
+}
+
+/* Paragraph */
+p {
+    color: #000000;
+}
+
+/* Main content */
+main {
+    padding: 20px;
+    flex: 1; /* Ensures footer stays at the bottom */
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #705348;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
