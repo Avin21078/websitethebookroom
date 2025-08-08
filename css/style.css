@@ -1,3 +1,14 @@
+@media screen and (max-width: 600px) {
+  .left, .main, .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  .columnleft, .columnright {
+    flex-basis: 100%;
+    margin: 5% 0;
+  }
+} 
+
+
 /* Reset and base styles */
 * {
     margin: 0;
@@ -6,7 +17,10 @@
 }
 
 body {
-    background-image: url("../images/background\ image.png");
+    background-image: url("../images/background-image.png");
+    background-attachment: fixed;
+  /*This next area of code is useful for the footer*/
+    background-size: cover; 
     font-family: Arial, Helvetica, sans-serif;
     background-color: #CAB09B;
     color: #000000;
@@ -16,10 +30,10 @@ body {
 }
 
 
-
 /* Navigation */
 nav {
     display: flex;
+
     align-items: center;
     justify-content: space-around;
     background-color: #583B28;
@@ -56,11 +70,14 @@ nav a {
     font-size: 25px;
 }
 
+nav a:hover { 
+  color:  #CAB09B; }
+
 /* H2 */
 h2 {
     color: #ffffff;
-    padding: 1em;
-    font-size: 30px;
+    padding: 2em;
+    font-size: 35px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 
@@ -73,24 +90,22 @@ p {
 
 }
 
-/* Main content */
-main {
-    padding: 20px;
-    flex: 1; /* Ensures footer stays at the bottom */
-}
+
 
 .transbox { /*Shadown Box for the text*/ 
     background-color: rgba(0, 0, 0, 0.8);
     align-items: center; 
     width: 100%;
-    padding: auto;
+    height: 100vh; /* Full viewport height */
+    align-items: center;
+    flex-direction: column;
+
 
 }
   
 .transbox p { /*Shadown Box for the paragraphs*/
     font-weight: lighter;
     color: #ffffff; 
-    margin: 2%;
     text-align: center;
 }
 
@@ -101,11 +116,12 @@ button {
   padding: 18px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-size: 15px;
-  margin: 0 auto;
+  display: block;
+  margin: 20px auto;
   border-radius: 12px 12px; 
-  align-self: center;
+
+
 }
 
 /* Footer */
