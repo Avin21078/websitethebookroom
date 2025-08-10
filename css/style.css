@@ -11,102 +11,110 @@
 
 /* Reset and base styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
 }
 
 body {
-    background-image: url("../images/background-image.png");
-    background-attachment: fixed;
+  background-image: url("../images/background-image.png");
+  background-attachment: fixed;
   /*This next area of code is useful for the footer*/
-    background-size: cover; 
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #CAB09B;
-    color: #000000;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+  background-size: cover; 
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #CAB09B;
+  color: #583B28;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+
 }
 
 
 /* Navigation */
 nav {
-    display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #583B28;
+  border-top: thin solid #583B28;
+  border-bottom: thin solid #583B28;
+  height: auto;
+  padding: 1em;
 
-    align-items: center;
-    justify-content: space-around;
-    background-color: #583B28;
-    border-top: thin solid #583B28;
-    border-bottom: thin solid #583B28;
-    height: auto;
-    padding: 1em;
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    padding: 0;
-    margin: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
 }
 
 nav li {
-    flex-grow: 1;
-    text-align: center;
+  flex-grow: 1;
+  text-align: center;
+
 }
 
 nav a {
-    display: block;
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 0.5em 1em;
-    font-size: 25px;
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0.5em 1em;
+  font-size: 25px;
+
 }
 
 nav a:hover { 
-  color:  #CAB09B; }
+  color:  #CAB09B;
+
+}
 
 /* H2 */
 h2 {
-    color: #ffffff;
-    padding: 2em;
-    font-size: 35px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
+  color: #ffffff;
+  padding: 2em;
+  font-size: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
 
 }
 
 /* Paragraph */
 p {
-    color: #000000;
-    font-family: Arial, Helvetica, sans-serif;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
 
 }
 
 
 
 .transbox { /*Shadown Box for the text*/ 
-    background-color: rgba(0, 0, 0, 0.8);
-    align-items: center; 
-    width: 100%;
-    height: 100vh; /* Full viewport height */
-    align-items: center;
-    flex-direction: column;
-
+  background-color: rgba(0, 0, 0, 0.8);
+  align-items: center; 
+  width: 100%;
+  height: 100%; /* Full viewport height */
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 5%;
 
 }
   
 .transbox p { /*Shadown Box for the paragraphs*/
-    font-weight: lighter;
-    color: #ffffff; 
-    text-align: center;
+  font-weight: lighter;
+  color: #ffffff; 
+  text-align: center;
+
 }
 
 button {
@@ -121,17 +129,30 @@ button {
   margin: 20px auto;
   border-radius: 12px 12px; 
 
+}
 
+.colour-section {
+	background-color: #CAB09B;
+	padding: 20px; /* Add some padding around the section */
+	margin-top: auto;
+  height: 50vh;
+	display: flex;
+	flex-direction: column; /* Stack children vertically */
+	align-items: center; /* Center children horizontally */
+  justify-content: flex-start; /* Align children at the top */
+	position: relative; /* Make the section position relative to position the white box inside it */
+	box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 /* Footer */
 footer {
-    background-color: #583B28;
-    color: #ffffff;
-    text-align: center;
-    padding: 10px 0;
-    width: 100%;
-    height: 10%;
-    position: fixed;
-    bottom: 0;
+  background-color: #583B28;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  height: 10%;
+  position: fixed;
+  bottom: 0;
+
 }
