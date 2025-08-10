@@ -90,10 +90,20 @@ h2 {
 
 }
 
+h3 {
+  color: #583B28;
+  padding: 2em;
+  font-size: 27px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
 /* Paragraph */
 p {
-  color: #000000;
+  color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 2%;
+  font-size: 18px;
 
 }
 
@@ -116,6 +126,40 @@ p {
   text-align: center;
 
 }
+
+.typewriter {
+  display: flex;
+  justify-content: center;
+}
+
+.typewriter h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 35px;
+  margin-inline: auto;
+  overflow: hidden;
+  /* Keeps on a single line */
+  white-space: nowrap;
+  /* steps = number of characters */
+  animation: typing 3s steps(28) forwards, blink 1s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+
 
 button {
   background-color: #CAB09B;
