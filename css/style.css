@@ -239,7 +239,7 @@ footer {
 
 .carousel-container {
   display: flex;
-  gap: 2rem;
+  gap: 2.5rem;
   overflow-x: auto;
   scroll-behavior: smooth;
 }
@@ -250,6 +250,7 @@ footer {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   padding: 1rem;
+
 }
 
 .book-card img {
@@ -263,13 +264,13 @@ footer {
 }
 
 .book-card .tags {
-  font-size: 0.85rem;
+  font-size: 16px;
   color: #000000;
   margin: 0.5rem 0;
 }
 
 .book-card p {
-  font-size: 0.9rem;
+  font-size: 16px;
   color: #000000;
 }
 
