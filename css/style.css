@@ -309,3 +309,79 @@ footer {
   scrollbar-width: none;
 }
 
+@media screen and (max-width: 600px) { 
+  .left, .main, .right {
+    width: 100%;
+  }
+  .columnleft, .columnright {
+    flex-basis: 100%;
+    margin: 5% 0;
+  }
+
+  /* Navigation adjustments */
+  nav ul {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+
+  nav a {
+    font-size: 18px;
+    padding: 0.5em;
+  }
+
+  /* Headings smaller for mobile */
+  h2 {
+    font-size: 28px;
+    padding: 1em;
+  }
+
+  h3 {
+    font-size: 22px;
+    padding: 1em;
+  }
+
+  /* Paragraphs smaller */
+  p {
+    font-size: 16px;
+    padding-bottom: 1em;
+  }
+
+  /* Transbox adjustments */
+  .transboxhome, .transbox {
+    padding: 2% 5%;
+    height: auto; /* let content determine height */
+  }
+
+  /* Typewriter smaller */
+  .typewriter h2 {
+    font-size: 24px;
+    animation: typing 3s steps(20) forwards, blink 1s step-end infinite;
+  }
+
+  /* Button smaller */
+  button {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  /* Colour section smaller */
+  .colour-section {
+    padding: 15px;
+    height: auto;
+  }
+
+  /* Book carousel adjustments */
+  .book-carousel {
+    padding: 2rem;
+  }
+
+  .book-card {
+    flex: 0 0 80%; /* make cards almost full width on mobile */
+    margin: 0 auto;
+  }
+
+  .carousel-btn {
+    padding: 0.3rem 0.6rem;
+    font-size: 1.2rem;
+  }
+}
