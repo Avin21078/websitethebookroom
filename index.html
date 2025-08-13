@@ -20,7 +20,7 @@
             <li><a href="habit.html">Build Your Reading Habit</a></li>
         </ul>
     </nav>
-        <div class="transbox">  <!--A shadow box behind the text-->
+        <div class="transboxhome">  <!--A shadow box behind the text-->
             <div class="typewriter">
             <div>
                 <h2>Welcome to the Reading Room!</h2>
@@ -31,13 +31,88 @@
         
         </div>
 
-    <section class="colour-section">
-    <h3>Recommended Books : </h3>
+    <section class="book-carousel">
+    <h3>Recommended Books :</h3>
+    
+    <div class="carousel-wrapper">
+        <button class="carousel-btn prev">&#10094;</button>
+        
+        <div class="carousel-container">
+        <div class="book-card">
+            <img src="images/the-fault-in-our-stars.jpg" alt="The Fault in Our Stars by John Green">
+            <h3>Fault In Our Stars By John Green</h3>
+            <p class="tags">#Fiction #Romance #YoungAdult</p>
+            <p>The Fault in Our Stars is a touching novel about two teens with cancer, Hazel and Augustus...</p>
+        </div>
+
+        <div class="book-card">
+            <img src="images/atomic-habits.jpg" alt="Atomic Habits by James Clear">
+            <h3>Atomic Habits By James Clear</h3>
+            <p class="tags">#Nonfiction #SelfHelp #Psychology</p>
+            <p>Atomic Habits is a practical guide to building good habits and breaking bad ones...</p>
+        </div>
+
+        <div class="book-card">
+            <img src="images/and-then-there were-none.jpg" alt="And Then There Were None by Agatha Christie">
+            <h3>And Then There Were None By Agatha Christie</h3>
+            <p class="tags">#Fiction #Mystery #Classics #Crime</p>
+            <p>This suspenseful mystery invites strangers to an island where they are killed off one by one...</p>
+        </div>
+
+        <div class="book-card">
+            <img src="images/and-then-there were-none.jpg" alt="And Then There Were None by Agatha Christie">
+            <h3>And Then There Were None By Agatha Christie</h3>
+            <p class="tags">#Fiction #Mystery #Classics #Crime</p>
+            <p>This suspenseful mystery invites strangers to an island where they are killed off one by one...</p>
+        </div>
+
+        <div class="book-card">
+            <img src="images/and-then-there were-none.jpg" alt="And Then There Were None by Agatha Christie">
+            <h3>And Then There Were None By Agatha Christie</h3>
+            <p class="tags">#Fiction #Mystery #Classics #Crime</p>
+            <p>This suspenseful mystery invites strangers to an island where they are killed off one by one...</p>
+        </div>
+
+            <div class="book-card">
+            <img src="images/and-then-there were-none.jpg" alt="And Then There Were None by Agatha Christie">
+            <h3>And Then There Were None By Agatha Christie</h3>
+            <p class="tags">#Fiction #Mystery #Classics #Crime</p>
+            <p>This suspenseful mystery invites strangers to an island where they are killed off one by one...</p>
+        </div>
+
+            <div class="book-card">
+            <img src="images/and-then-there were-none.jpg" alt="And Then There Were None by Agatha Christie">
+            <h3>And Then There Were None By Agatha Christie</h3>
+            <p class="tags">#Fiction #Mystery #Classics #Crime</p>
+            <p>This suspenseful mystery invites strangers to an island where they are killed off one by one...</p>
+        </div>
+    
+        </div>
+
+        <button class="carousel-btn next">&#10095;</button>
+    </div>
     </section>
 
-    
     <footer>
-        <p>&copy; 2025 My Website</p>
+        <p>&copy; 2025 My Website <br> Contact Us : <br>Email : </p>
     </footer>
+
+    <script>
+        const prevBtn = document.querySelector('.prev');
+        const nextBtn = document.querySelector('.next');
+        const carousel = document.querySelector('.carousel-container');
+
+        const cardWidth = document.querySelector('.book-card').offsetWidth + 16; 
+
+        nextBtn.addEventListener('click', () => {
+        carousel.scrollBy({ left: cardWidth, behavior: 'smooth' });
+        });
+
+        prevBtn.addEventListener('click', () => {
+        carousel.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+        });
+    </script>
+
+
 </body>
 </html>
